@@ -1,0 +1,799 @@
+04/28/2022 01:02:18 - INFO - root -   ----------------开始计时----------------
+04/28/2022 01:02:18 - INFO - root -   ----------------------------------------
+04/28/2022 01:02:18 - INFO - __main__ -   mrc in max_seq_len 512
+04/28/2022 01:02:18 - INFO - root -   ----------------开始计时----------------
+04/28/2022 01:02:18 - INFO - root -   ----------------------------------------
+04/28/2022 01:02:18 - INFO - __main__ -   mrc in max_seq_len 512
+04/28/2022 01:02:19 - INFO - root -   Added key: store_based_barrier_key:1 to store for rank: 1
+04/28/2022 01:02:19 - INFO - root -   Added key: store_based_barrier_key:1 to store for rank: 0
+04/28/2022 01:02:19 - INFO - preprocess.processor -   Convert 10124 examples to features
+04/28/2022 01:02:19 - INFO - preprocess.processor -   Convert 10124 examples to features
+04/28/2022 01:03:20 - INFO - preprocess.processor -   Build 101240 features
+04/28/2022 01:03:20 - INFO - preprocess.processor -   Build 101240 features
+04/28/2022 01:03:33 - INFO - transformers.configuration_utils -   loading configuration file ../FinBERT/config.json
+04/28/2022 01:03:33 - INFO - transformers.configuration_utils -   Model config BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "output_hidden_states": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+04/28/2022 01:03:33 - INFO - transformers.modeling_utils -   loading weights file ../FinBERT/pytorch_model.bin
+04/28/2022 01:03:33 - INFO - transformers.configuration_utils -   loading configuration file ../FinBERT/config.json
+04/28/2022 01:03:33 - INFO - transformers.configuration_utils -   Model config BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "output_hidden_states": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+04/28/2022 01:03:33 - INFO - transformers.modeling_utils -   loading weights file ../FinBERT/pytorch_model.bin
+04/28/2022 01:03:38 - INFO - utils.functions_utils -   Use multi gpus in: [0, 1]
+04/28/2022 01:03:38 - INFO - utils.functions_utils -   Use multi gpus in: [0, 1]
+04/28/2022 01:03:38 - INFO - utils.functions_utils -   Model loaded successfully!
+04/28/2022 01:03:38 - INFO - utils.functions_utils -   Model loaded successfully!
+04/28/2022 01:03:38 - INFO - utils.trainer -   ***** Running training *****
+04/28/2022 01:03:38 - INFO - utils.trainer -     Num Examples = 101240
+04/28/2022 01:03:38 - INFO - utils.trainer -     Num Epochs = 10
+04/28/2022 01:03:38 - INFO - utils.trainer -     Total training batch size = 8
+04/28/2022 01:03:38 - INFO - utils.trainer -     Total optimization steps = 63280
+04/28/2022 01:03:38 - INFO - utils.trainer -   ***** Running training *****
+04/28/2022 01:03:38 - INFO - utils.trainer -   Save model in 6328 steps; Eval model in 6328 steps
+04/28/2022 01:03:38 - INFO - utils.trainer -     Num Examples = 101240
+04/28/2022 01:03:38 - INFO - utils.trainer -     Num Epochs = 10
+04/28/2022 01:03:38 - INFO - utils.trainer -     Total training batch size = 8
+04/28/2022 01:03:38 - INFO - utils.trainer -     Total optimization steps = 63280
+04/28/2022 01:03:38 - INFO - utils.trainer -   Save model in 6328 steps; Eval model in 6328 steps
+04/28/2022 01:04:28 - INFO - utils.trainer -   From rank0 Step: 200 / 63280 ----> average loss: 0.72969
+04/28/2022 01:04:28 - INFO - utils.trainer -   From rank1 Step: 200 / 63280 ----> average loss: 0.73076
+04/28/2022 01:05:19 - INFO - utils.trainer -   From rank0 Step: 400 / 63280 ----> average loss: 0.41539
+04/28/2022 01:05:19 - INFO - utils.trainer -   From rank1 Step: 400 / 63280 ----> average loss: 0.41543
+04/28/2022 01:06:10 - INFO - utils.trainer -   From rank0 Step: 600 / 63280 ----> average loss: 0.41299
+04/28/2022 01:06:10 - INFO - utils.trainer -   From rank1 Step: 600 / 63280 ----> average loss: 0.41370
+04/28/2022 01:07:02 - INFO - utils.trainer -   From rank1 Step: 800 / 63280 ----> average loss: 0.41138
+04/28/2022 01:07:02 - INFO - utils.trainer -   From rank0 Step: 800 / 63280 ----> average loss: 0.41023
+04/28/2022 01:07:53 - INFO - utils.trainer -   From rank0 Step: 1000 / 63280 ----> average loss: 0.40446
+04/28/2022 01:07:53 - INFO - utils.trainer -   From rank1 Step: 1000 / 63280 ----> average loss: 0.40535
+04/28/2022 01:08:44 - INFO - utils.trainer -   From rank0 Step: 1200 / 63280 ----> average loss: 0.40193
+04/28/2022 01:08:44 - INFO - utils.trainer -   From rank1 Step: 1200 / 63280 ----> average loss: 0.40257
+04/28/2022 01:09:35 - INFO - utils.trainer -   From rank0 Step: 1400 / 63280 ----> average loss: 0.40068
+04/28/2022 01:09:35 - INFO - utils.trainer -   From rank1 Step: 1400 / 63280 ----> average loss: 0.40188
+04/28/2022 01:10:26 - INFO - utils.trainer -   From rank1 Step: 1600 / 63280 ----> average loss: 0.40030
+04/28/2022 01:10:26 - INFO - utils.trainer -   From rank0 Step: 1600 / 63280 ----> average loss: 0.40002
+04/28/2022 01:11:16 - INFO - utils.trainer -   From rank1 Step: 1800 / 63280 ----> average loss: 0.40051
+04/28/2022 01:11:16 - INFO - utils.trainer -   From rank0 Step: 1800 / 63280 ----> average loss: 0.39977
+04/28/2022 01:12:07 - INFO - utils.trainer -   From rank1 Step: 2000 / 63280 ----> average loss: 0.39948
+04/28/2022 01:12:07 - INFO - utils.trainer -   From rank0 Step: 2000 / 63280 ----> average loss: 0.39935
+04/28/2022 01:12:57 - INFO - utils.trainer -   From rank0 Step: 2200 / 63280 ----> average loss: 0.39943
+04/28/2022 01:12:57 - INFO - utils.trainer -   From rank1 Step: 2200 / 63280 ----> average loss: 0.39912
+04/28/2022 01:13:48 - INFO - utils.trainer -   From rank0 Step: 2400 / 63280 ----> average loss: 0.39951
+04/28/2022 01:13:48 - INFO - utils.trainer -   From rank1 Step: 2400 / 63280 ----> average loss: 0.39961
+04/28/2022 01:14:39 - INFO - utils.trainer -   From rank1 Step: 2600 / 63280 ----> average loss: 0.39974
+04/28/2022 01:14:39 - INFO - utils.trainer -   From rank0 Step: 2600 / 63280 ----> average loss: 0.39882
+04/28/2022 01:15:29 - INFO - utils.trainer -   From rank1 Step: 2800 / 63280 ----> average loss: 0.39857
+04/28/2022 01:15:29 - INFO - utils.trainer -   From rank0 Step: 2800 / 63280 ----> average loss: 0.39926
+04/28/2022 01:16:20 - INFO - utils.trainer -   From rank1 Step: 3000 / 63280 ----> average loss: 0.39913
+04/28/2022 01:16:20 - INFO - utils.trainer -   From rank0 Step: 3000 / 63280 ----> average loss: 0.39894
+04/28/2022 01:17:10 - INFO - utils.trainer -   From rank0 Step: 3200 / 63280 ----> average loss: 0.39886
+04/28/2022 01:17:10 - INFO - utils.trainer -   From rank1 Step: 3200 / 63280 ----> average loss: 0.39935
+04/28/2022 01:18:01 - INFO - utils.trainer -   From rank1 Step: 3400 / 63280 ----> average loss: 0.39844
+04/28/2022 01:18:01 - INFO - utils.trainer -   From rank0 Step: 3400 / 63280 ----> average loss: 0.39893
+04/28/2022 01:18:51 - INFO - utils.trainer -   From rank1 Step: 3600 / 63280 ----> average loss: 0.39891
+04/28/2022 01:18:51 - INFO - utils.trainer -   From rank0 Step: 3600 / 63280 ----> average loss: 0.39852
+04/28/2022 01:19:41 - INFO - utils.trainer -   From rank1 Step: 3800 / 63280 ----> average loss: 0.39850
+04/28/2022 01:19:41 - INFO - utils.trainer -   From rank0 Step: 3800 / 63280 ----> average loss: 0.39851
+04/28/2022 01:20:31 - INFO - utils.trainer -   From rank1 Step: 4000 / 63280 ----> average loss: 0.39839
+04/28/2022 01:20:32 - INFO - utils.trainer -   From rank0 Step: 4000 / 63280 ----> average loss: 0.39820
+04/28/2022 01:21:22 - INFO - utils.trainer -   From rank1 Step: 4200 / 63280 ----> average loss: 0.39883
+04/28/2022 01:21:22 - INFO - utils.trainer -   From rank0 Step: 4200 / 63280 ----> average loss: 0.39818
+04/28/2022 01:22:12 - INFO - utils.trainer -   From rank1 Step: 4400 / 63280 ----> average loss: 0.39891
+04/28/2022 01:22:12 - INFO - utils.trainer -   From rank0 Step: 4400 / 63280 ----> average loss: 0.39872
+04/28/2022 01:23:02 - INFO - utils.trainer -   From rank1 Step: 4600 / 63280 ----> average loss: 0.39832
+04/28/2022 01:23:02 - INFO - utils.trainer -   From rank0 Step: 4600 / 63280 ----> average loss: 0.39823
+04/28/2022 01:23:53 - INFO - utils.trainer -   From rank0 Step: 4800 / 63280 ----> average loss: 0.39904
+04/28/2022 01:23:53 - INFO - utils.trainer -   From rank1 Step: 4800 / 63280 ----> average loss: 0.39840
+04/28/2022 01:24:44 - INFO - utils.trainer -   From rank0 Step: 5000 / 63280 ----> average loss: 0.39846
+04/28/2022 01:24:44 - INFO - utils.trainer -   From rank1 Step: 5000 / 63280 ----> average loss: 0.39826
+04/28/2022 01:25:35 - INFO - utils.trainer -   From rank1 Step: 5200 / 63280 ----> average loss: 0.39850
+04/28/2022 01:25:35 - INFO - utils.trainer -   From rank0 Step: 5200 / 63280 ----> average loss: 0.39803
+04/28/2022 01:26:25 - INFO - utils.trainer -   From rank0 Step: 5400 / 63280 ----> average loss: 0.39882
+04/28/2022 01:26:25 - INFO - utils.trainer -   From rank1 Step: 5400 / 63280 ----> average loss: 0.39788
+04/28/2022 01:27:17 - INFO - utils.trainer -   From rank0 Step: 5600 / 63280 ----> average loss: 0.39769
+04/28/2022 01:27:17 - INFO - utils.trainer -   From rank1 Step: 5600 / 63280 ----> average loss: 0.39867
+04/28/2022 01:28:07 - INFO - utils.trainer -   From rank1 Step: 5800 / 63280 ----> average loss: 0.39812
+04/28/2022 01:28:07 - INFO - utils.trainer -   From rank0 Step: 5800 / 63280 ----> average loss: 0.39817
+04/28/2022 01:28:57 - INFO - utils.trainer -   From rank0 Step: 6000 / 63280 ----> average loss: 0.39785
+04/28/2022 01:28:57 - INFO - utils.trainer -   From rank1 Step: 6000 / 63280 ----> average loss: 0.39861
+04/28/2022 01:29:48 - INFO - utils.trainer -   From rank0 Step: 6200 / 63280 ----> average loss: 0.39791
+04/28/2022 01:29:48 - INFO - utils.trainer -   From rank1 Step: 6200 / 63280 ----> average loss: 0.39821
+04/28/2022 01:30:21 - INFO - utils.trainer -   Saving model & optimizer & scheduler checkpoint to ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-6328
+04/28/2022 01:30:40 - INFO - utils.trainer -   From rank0 Step: 6400 / 63280 ----> average loss: 0.39815
+04/28/2022 01:30:40 - INFO - utils.trainer -   From rank1 Step: 6400 / 63280 ----> average loss: 0.39773
+04/28/2022 01:31:31 - INFO - utils.trainer -   From rank0 Step: 6600 / 63280 ----> average loss: 0.39836
+04/28/2022 01:31:31 - INFO - utils.trainer -   From rank1 Step: 6600 / 63280 ----> average loss: 0.39828
+04/28/2022 01:32:21 - INFO - utils.trainer -   From rank0 Step: 6800 / 63280 ----> average loss: 0.39800
+04/28/2022 01:32:21 - INFO - utils.trainer -   From rank1 Step: 6800 / 63280 ----> average loss: 0.39810
+04/28/2022 01:33:11 - INFO - utils.trainer -   From rank1 Step: 7000 / 63280 ----> average loss: 0.39742
+04/28/2022 01:33:12 - INFO - utils.trainer -   From rank0 Step: 7000 / 63280 ----> average loss: 0.39794
+04/28/2022 01:34:02 - INFO - utils.trainer -   From rank1 Step: 7200 / 63280 ----> average loss: 0.39781
+04/28/2022 01:34:02 - INFO - utils.trainer -   From rank0 Step: 7200 / 63280 ----> average loss: 0.39795
+04/28/2022 01:34:51 - INFO - utils.trainer -   From rank0 Step: 7400 / 63280 ----> average loss: 0.39809
+04/28/2022 01:34:51 - INFO - utils.trainer -   From rank1 Step: 7400 / 63280 ----> average loss: 0.39822
+04/28/2022 01:35:42 - INFO - utils.trainer -   From rank1 Step: 7600 / 63280 ----> average loss: 0.39751
+04/28/2022 01:35:42 - INFO - utils.trainer -   From rank0 Step: 7600 / 63280 ----> average loss: 0.39717
+04/28/2022 01:36:32 - INFO - utils.trainer -   From rank1 Step: 7800 / 63280 ----> average loss: 0.39732
+04/28/2022 01:36:32 - INFO - utils.trainer -   From rank0 Step: 7800 / 63280 ----> average loss: 0.39749
+04/28/2022 01:37:23 - INFO - utils.trainer -   From rank1 Step: 8000 / 63280 ----> average loss: 0.39716
+04/28/2022 01:37:23 - INFO - utils.trainer -   From rank0 Step: 8000 / 63280 ----> average loss: 0.39835
+04/28/2022 01:38:13 - INFO - utils.trainer -   From rank1 Step: 8200 / 63280 ----> average loss: 0.39740
+04/28/2022 01:38:13 - INFO - utils.trainer -   From rank0 Step: 8200 / 63280 ----> average loss: 0.39782
+04/28/2022 01:39:03 - INFO - utils.trainer -   From rank1 Step: 8400 / 63280 ----> average loss: 0.39765
+04/28/2022 01:39:03 - INFO - utils.trainer -   From rank0 Step: 8400 / 63280 ----> average loss: 0.39693
+04/28/2022 01:39:54 - INFO - utils.trainer -   From rank0 Step: 8600 / 63280 ----> average loss: 0.39724
+04/28/2022 01:39:54 - INFO - utils.trainer -   From rank1 Step: 8600 / 63280 ----> average loss: 0.39734
+04/28/2022 01:40:45 - INFO - utils.trainer -   From rank1 Step: 8800 / 63280 ----> average loss: 0.39748
+04/28/2022 01:40:45 - INFO - utils.trainer -   From rank0 Step: 8800 / 63280 ----> average loss: 0.39715
+04/28/2022 01:41:35 - INFO - utils.trainer -   From rank1 Step: 9000 / 63280 ----> average loss: 0.39724
+04/28/2022 01:41:35 - INFO - utils.trainer -   From rank0 Step: 9000 / 63280 ----> average loss: 0.39764
+04/28/2022 01:42:25 - INFO - utils.trainer -   From rank0 Step: 9200 / 63280 ----> average loss: 0.39701
+04/28/2022 01:42:25 - INFO - utils.trainer -   From rank1 Step: 9200 / 63280 ----> average loss: 0.39747
+04/28/2022 01:43:16 - INFO - utils.trainer -   From rank0 Step: 9400 / 63280 ----> average loss: 0.39736
+04/28/2022 01:43:16 - INFO - utils.trainer -   From rank1 Step: 9400 / 63280 ----> average loss: 0.39753
+04/28/2022 01:44:06 - INFO - utils.trainer -   From rank1 Step: 9600 / 63280 ----> average loss: 0.39780
+04/28/2022 01:44:06 - INFO - utils.trainer -   From rank0 Step: 9600 / 63280 ----> average loss: 0.39718
+04/28/2022 01:44:56 - INFO - utils.trainer -   From rank1 Step: 9800 / 63280 ----> average loss: 0.39765
+04/28/2022 01:44:56 - INFO - utils.trainer -   From rank0 Step: 9800 / 63280 ----> average loss: 0.39715
+04/28/2022 01:45:47 - INFO - utils.trainer -   From rank1 Step: 10000 / 63280 ----> average loss: 0.39776
+04/28/2022 01:45:47 - INFO - utils.trainer -   From rank0 Step: 10000 / 63280 ----> average loss: 0.39715
+04/28/2022 01:46:37 - INFO - utils.trainer -   From rank1 Step: 10200 / 63280 ----> average loss: 0.39763
+04/28/2022 01:46:37 - INFO - utils.trainer -   From rank0 Step: 10200 / 63280 ----> average loss: 0.39726
+04/28/2022 01:47:28 - INFO - utils.trainer -   From rank0 Step: 10400 / 63280 ----> average loss: 0.39721
+04/28/2022 01:47:28 - INFO - utils.trainer -   From rank1 Step: 10400 / 63280 ----> average loss: 0.39695
+04/28/2022 01:48:18 - INFO - utils.trainer -   From rank1 Step: 10600 / 63280 ----> average loss: 0.39769
+04/28/2022 01:48:18 - INFO - utils.trainer -   From rank0 Step: 10600 / 63280 ----> average loss: 0.39719
+04/28/2022 01:49:09 - INFO - utils.trainer -   From rank0 Step: 10800 / 63280 ----> average loss: 0.39760
+04/28/2022 01:49:09 - INFO - utils.trainer -   From rank1 Step: 10800 / 63280 ----> average loss: 0.39771
+04/28/2022 01:50:00 - INFO - utils.trainer -   From rank0 Step: 11000 / 63280 ----> average loss: 0.39687
+04/28/2022 01:50:00 - INFO - utils.trainer -   From rank1 Step: 11000 / 63280 ----> average loss: 0.39666
+04/28/2022 01:50:51 - INFO - utils.trainer -   From rank0 Step: 11200 / 63280 ----> average loss: 0.39692
+04/28/2022 01:50:51 - INFO - utils.trainer -   From rank1 Step: 11200 / 63280 ----> average loss: 0.39751
+04/28/2022 01:51:42 - INFO - utils.trainer -   From rank0 Step: 11400 / 63280 ----> average loss: 0.39700
+04/28/2022 01:51:42 - INFO - utils.trainer -   From rank1 Step: 11400 / 63280 ----> average loss: 0.39655
+04/28/2022 01:52:33 - INFO - utils.trainer -   From rank0 Step: 11600 / 63280 ----> average loss: 0.39740
+04/28/2022 01:52:33 - INFO - utils.trainer -   From rank1 Step: 11600 / 63280 ----> average loss: 0.39755
+04/28/2022 01:53:24 - INFO - utils.trainer -   From rank0 Step: 11800 / 63280 ----> average loss: 0.39737
+04/28/2022 01:53:24 - INFO - utils.trainer -   From rank1 Step: 11800 / 63280 ----> average loss: 0.39749
+04/28/2022 01:54:15 - INFO - utils.trainer -   From rank0 Step: 12000 / 63280 ----> average loss: 0.39755
+04/28/2022 01:54:15 - INFO - utils.trainer -   From rank1 Step: 12000 / 63280 ----> average loss: 0.39731
+04/28/2022 01:55:06 - INFO - utils.trainer -   From rank0 Step: 12200 / 63280 ----> average loss: 0.39660
+04/28/2022 01:55:06 - INFO - utils.trainer -   From rank1 Step: 12200 / 63280 ----> average loss: 0.39719
+04/28/2022 01:55:57 - INFO - utils.trainer -   From rank0 Step: 12400 / 63280 ----> average loss: 0.39645
+04/28/2022 01:55:57 - INFO - utils.trainer -   From rank1 Step: 12400 / 63280 ----> average loss: 0.39718
+04/28/2022 01:56:48 - INFO - utils.trainer -   From rank0 Step: 12600 / 63280 ----> average loss: 0.39702
+04/28/2022 01:56:48 - INFO - utils.trainer -   From rank1 Step: 12600 / 63280 ----> average loss: 0.39730
+04/28/2022 01:57:02 - INFO - utils.trainer -   Saving model & optimizer & scheduler checkpoint to ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-12656
+04/28/2022 01:57:40 - INFO - utils.trainer -   From rank0 Step: 12800 / 63280 ----> average loss: 0.39687
+04/28/2022 01:57:40 - INFO - utils.trainer -   From rank1 Step: 12800 / 63280 ----> average loss: 0.39697
+04/28/2022 01:58:32 - INFO - utils.trainer -   From rank0 Step: 13000 / 63280 ----> average loss: 0.39723
+04/28/2022 01:58:32 - INFO - utils.trainer -   From rank1 Step: 13000 / 63280 ----> average loss: 0.39686
+04/28/2022 01:59:23 - INFO - utils.trainer -   From rank0 Step: 13200 / 63280 ----> average loss: 0.39708
+04/28/2022 01:59:23 - INFO - utils.trainer -   From rank1 Step: 13200 / 63280 ----> average loss: 0.39663
+04/28/2022 02:00:14 - INFO - utils.trainer -   From rank0 Step: 13400 / 63280 ----> average loss: 0.39684
+04/28/2022 02:00:14 - INFO - utils.trainer -   From rank1 Step: 13400 / 63280 ----> average loss: 0.39683
+04/28/2022 02:01:05 - INFO - utils.trainer -   From rank1 Step: 13600 / 63280 ----> average loss: 0.39678
+04/28/2022 02:01:05 - INFO - utils.trainer -   From rank0 Step: 13600 / 63280 ----> average loss: 0.39694
+04/28/2022 02:01:56 - INFO - utils.trainer -   From rank0 Step: 13800 / 63280 ----> average loss: 0.39681
+04/28/2022 02:01:56 - INFO - utils.trainer -   From rank1 Step: 13800 / 63280 ----> average loss: 0.39717
+04/28/2022 02:02:47 - INFO - utils.trainer -   From rank1 Step: 14000 / 63280 ----> average loss: 0.39659
+04/28/2022 02:02:47 - INFO - utils.trainer -   From rank0 Step: 14000 / 63280 ----> average loss: 0.39682
+04/28/2022 02:03:37 - INFO - utils.trainer -   From rank0 Step: 14200 / 63280 ----> average loss: 0.39660
+04/28/2022 02:03:37 - INFO - utils.trainer -   From rank1 Step: 14200 / 63280 ----> average loss: 0.39692
+04/28/2022 02:04:28 - INFO - utils.trainer -   From rank0 Step: 14400 / 63280 ----> average loss: 0.39669
+04/28/2022 02:04:28 - INFO - utils.trainer -   From rank1 Step: 14400 / 63280 ----> average loss: 0.39684
+04/28/2022 02:05:18 - INFO - utils.trainer -   From rank0 Step: 14600 / 63280 ----> average loss: 0.39648
+04/28/2022 02:05:18 - INFO - utils.trainer -   From rank1 Step: 14600 / 63280 ----> average loss: 0.39655
+04/28/2022 02:06:09 - INFO - utils.trainer -   From rank0 Step: 14800 / 63280 ----> average loss: 0.39630
+04/28/2022 02:06:09 - INFO - utils.trainer -   From rank1 Step: 14800 / 63280 ----> average loss: 0.39659
+04/28/2022 02:06:59 - INFO - utils.trainer -   From rank1 Step: 15000 / 63280 ----> average loss: 0.39619
+04/28/2022 02:06:59 - INFO - utils.trainer -   From rank0 Step: 15000 / 63280 ----> average loss: 0.39691
+04/28/2022 02:07:50 - INFO - utils.trainer -   From rank0 Step: 15200 / 63280 ----> average loss: 0.39679
+04/28/2022 02:07:50 - INFO - utils.trainer -   From rank1 Step: 15200 / 63280 ----> average loss: 0.39659
+04/28/2022 02:08:40 - INFO - utils.trainer -   From rank1 Step: 15400 / 63280 ----> average loss: 0.39683
+04/28/2022 02:08:40 - INFO - utils.trainer -   From rank0 Step: 15400 / 63280 ----> average loss: 0.39689
+04/28/2022 02:09:30 - INFO - utils.trainer -   From rank1 Step: 15600 / 63280 ----> average loss: 0.39705
+04/28/2022 02:09:30 - INFO - utils.trainer -   From rank0 Step: 15600 / 63280 ----> average loss: 0.39713
+04/28/2022 02:10:20 - INFO - utils.trainer -   From rank0 Step: 15800 / 63280 ----> average loss: 0.39661
+04/28/2022 02:10:20 - INFO - utils.trainer -   From rank1 Step: 15800 / 63280 ----> average loss: 0.39672
+04/28/2022 02:11:11 - INFO - utils.trainer -   From rank1 Step: 16000 / 63280 ----> average loss: 0.39666
+04/28/2022 02:11:11 - INFO - utils.trainer -   From rank0 Step: 16000 / 63280 ----> average loss: 0.39650
+04/28/2022 02:12:01 - INFO - utils.trainer -   From rank1 Step: 16200 / 63280 ----> average loss: 0.39693
+04/28/2022 02:12:01 - INFO - utils.trainer -   From rank0 Step: 16200 / 63280 ----> average loss: 0.39662
+04/28/2022 02:12:51 - INFO - utils.trainer -   From rank1 Step: 16400 / 63280 ----> average loss: 0.39664
+04/28/2022 02:12:51 - INFO - utils.trainer -   From rank0 Step: 16400 / 63280 ----> average loss: 0.39696
+04/28/2022 02:13:42 - INFO - utils.trainer -   From rank1 Step: 16600 / 63280 ----> average loss: 0.39664
+04/28/2022 02:13:42 - INFO - utils.trainer -   From rank0 Step: 16600 / 63280 ----> average loss: 0.39655
+04/28/2022 02:14:32 - INFO - utils.trainer -   From rank0 Step: 16800 / 63280 ----> average loss: 0.39664
+04/28/2022 02:14:32 - INFO - utils.trainer -   From rank1 Step: 16800 / 63280 ----> average loss: 0.39683
+04/28/2022 02:15:22 - INFO - utils.trainer -   From rank0 Step: 17000 / 63280 ----> average loss: 0.39688
+04/28/2022 02:15:22 - INFO - utils.trainer -   From rank1 Step: 17000 / 63280 ----> average loss: 0.39661
+04/28/2022 02:16:12 - INFO - utils.trainer -   From rank1 Step: 17200 / 63280 ----> average loss: 0.39675
+04/28/2022 02:16:12 - INFO - utils.trainer -   From rank0 Step: 17200 / 63280 ----> average loss: 0.39689
+04/28/2022 02:17:03 - INFO - utils.trainer -   From rank1 Step: 17400 / 63280 ----> average loss: 0.39681
+04/28/2022 02:17:03 - INFO - utils.trainer -   From rank0 Step: 17400 / 63280 ----> average loss: 0.39629
+04/28/2022 02:17:53 - INFO - utils.trainer -   From rank0 Step: 17600 / 63280 ----> average loss: 0.39659
+04/28/2022 02:17:53 - INFO - utils.trainer -   From rank1 Step: 17600 / 63280 ----> average loss: 0.39641
+04/28/2022 02:18:43 - INFO - utils.trainer -   From rank1 Step: 17800 / 63280 ----> average loss: 0.39644
+04/28/2022 02:18:43 - INFO - utils.trainer -   From rank0 Step: 17800 / 63280 ----> average loss: 0.39659
+04/28/2022 02:19:33 - INFO - utils.trainer -   From rank1 Step: 18000 / 63280 ----> average loss: 0.39660
+04/28/2022 02:19:33 - INFO - utils.trainer -   From rank0 Step: 18000 / 63280 ----> average loss: 0.39682
+04/28/2022 02:20:23 - INFO - utils.trainer -   From rank1 Step: 18200 / 63280 ----> average loss: 0.39662
+04/28/2022 02:20:23 - INFO - utils.trainer -   From rank0 Step: 18200 / 63280 ----> average loss: 0.39642
+04/28/2022 02:21:14 - INFO - utils.trainer -   From rank1 Step: 18400 / 63280 ----> average loss: 0.39700
+04/28/2022 02:21:14 - INFO - utils.trainer -   From rank0 Step: 18400 / 63280 ----> average loss: 0.39653
+04/28/2022 02:22:04 - INFO - utils.trainer -   From rank1 Step: 18600 / 63280 ----> average loss: 0.39636
+04/28/2022 02:22:04 - INFO - utils.trainer -   From rank0 Step: 18600 / 63280 ----> average loss: 0.39655
+04/28/2022 02:22:54 - INFO - utils.trainer -   From rank1 Step: 18800 / 63280 ----> average loss: 0.39685
+04/28/2022 02:22:54 - INFO - utils.trainer -   From rank0 Step: 18800 / 63280 ----> average loss: 0.39654
+04/28/2022 02:23:41 - INFO - utils.trainer -   Saving model & optimizer & scheduler checkpoint to ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-18984
+04/28/2022 02:23:45 - INFO - utils.trainer -   From rank0 Step: 19000 / 63280 ----> average loss: 0.39631
+04/28/2022 02:23:45 - INFO - utils.trainer -   From rank1 Step: 19000 / 63280 ----> average loss: 0.39649
+04/28/2022 02:24:37 - INFO - utils.trainer -   From rank0 Step: 19200 / 63280 ----> average loss: 0.39637
+04/28/2022 02:24:37 - INFO - utils.trainer -   From rank1 Step: 19200 / 63280 ----> average loss: 0.39622
+04/28/2022 02:25:28 - INFO - utils.trainer -   From rank1 Step: 19400 / 63280 ----> average loss: 0.39609
+04/28/2022 02:25:28 - INFO - utils.trainer -   From rank0 Step: 19400 / 63280 ----> average loss: 0.39632
+04/28/2022 02:26:19 - INFO - utils.trainer -   From rank1 Step: 19600 / 63280 ----> average loss: 0.39631
+04/28/2022 02:26:19 - INFO - utils.trainer -   From rank0 Step: 19600 / 63280 ----> average loss: 0.39615
+04/28/2022 02:27:09 - INFO - utils.trainer -   From rank1 Step: 19800 / 63280 ----> average loss: 0.39661
+04/28/2022 02:27:09 - INFO - utils.trainer -   From rank0 Step: 19800 / 63280 ----> average loss: 0.39680
+04/28/2022 02:27:59 - INFO - utils.trainer -   From rank1 Step: 20000 / 63280 ----> average loss: 0.39652
+04/28/2022 02:27:59 - INFO - utils.trainer -   From rank0 Step: 20000 / 63280 ----> average loss: 0.39648
+04/28/2022 02:28:50 - INFO - utils.trainer -   From rank1 Step: 20200 / 63280 ----> average loss: 0.39628
+04/28/2022 02:28:50 - INFO - utils.trainer -   From rank0 Step: 20200 / 63280 ----> average loss: 0.39623
+04/28/2022 02:29:40 - INFO - utils.trainer -   From rank1 Step: 20400 / 63280 ----> average loss: 0.39610
+04/28/2022 02:29:40 - INFO - utils.trainer -   From rank0 Step: 20400 / 63280 ----> average loss: 0.39660
+04/28/2022 02:30:30 - INFO - utils.trainer -   From rank1 Step: 20600 / 63280 ----> average loss: 0.39658
+04/28/2022 02:30:30 - INFO - utils.trainer -   From rank0 Step: 20600 / 63280 ----> average loss: 0.39659
+04/28/2022 02:31:20 - INFO - utils.trainer -   From rank1 Step: 20800 / 63280 ----> average loss: 0.39653
+04/28/2022 02:31:20 - INFO - utils.trainer -   From rank0 Step: 20800 / 63280 ----> average loss: 0.39656
+04/28/2022 02:32:11 - INFO - utils.trainer -   From rank1 Step: 21000 / 63280 ----> average loss: 0.39673
+04/28/2022 02:32:11 - INFO - utils.trainer -   From rank0 Step: 21000 / 63280 ----> average loss: 0.39596
+04/28/2022 02:33:01 - INFO - utils.trainer -   From rank1 Step: 21200 / 63280 ----> average loss: 0.39623
+04/28/2022 02:33:01 - INFO - utils.trainer -   From rank0 Step: 21200 / 63280 ----> average loss: 0.39625
+04/28/2022 02:33:51 - INFO - utils.trainer -   From rank0 Step: 21400 / 63280 ----> average loss: 0.39613
+04/28/2022 02:33:51 - INFO - utils.trainer -   From rank1 Step: 21400 / 63280 ----> average loss: 0.39615
+04/28/2022 02:34:41 - INFO - utils.trainer -   From rank0 Step: 21600 / 63280 ----> average loss: 0.39615
+04/28/2022 02:34:41 - INFO - utils.trainer -   From rank1 Step: 21600 / 63280 ----> average loss: 0.39594
+04/28/2022 02:35:32 - INFO - utils.trainer -   From rank1 Step: 21800 / 63280 ----> average loss: 0.39622
+04/28/2022 02:35:32 - INFO - utils.trainer -   From rank0 Step: 21800 / 63280 ----> average loss: 0.39663
+04/28/2022 02:36:22 - INFO - utils.trainer -   From rank1 Step: 22000 / 63280 ----> average loss: 0.39640
+04/28/2022 02:36:22 - INFO - utils.trainer -   From rank0 Step: 22000 / 63280 ----> average loss: 0.39632
+04/28/2022 02:37:13 - INFO - utils.trainer -   From rank1 Step: 22200 / 63280 ----> average loss: 0.39624
+04/28/2022 02:37:13 - INFO - utils.trainer -   From rank0 Step: 22200 / 63280 ----> average loss: 0.39671
+04/28/2022 02:38:03 - INFO - utils.trainer -   From rank1 Step: 22400 / 63280 ----> average loss: 0.39602
+04/28/2022 02:38:03 - INFO - utils.trainer -   From rank0 Step: 22400 / 63280 ----> average loss: 0.39614
+04/28/2022 02:38:53 - INFO - utils.trainer -   From rank1 Step: 22600 / 63280 ----> average loss: 0.39632
+04/28/2022 02:38:53 - INFO - utils.trainer -   From rank0 Step: 22600 / 63280 ----> average loss: 0.39638
+04/28/2022 02:39:43 - INFO - utils.trainer -   From rank1 Step: 22800 / 63280 ----> average loss: 0.39634
+04/28/2022 02:39:43 - INFO - utils.trainer -   From rank0 Step: 22800 / 63280 ----> average loss: 0.39640
+04/28/2022 02:40:34 - INFO - utils.trainer -   From rank0 Step: 23000 / 63280 ----> average loss: 0.39593
+04/28/2022 02:40:34 - INFO - utils.trainer -   From rank1 Step: 23000 / 63280 ----> average loss: 0.39609
+04/28/2022 02:41:25 - INFO - utils.trainer -   From rank0 Step: 23200 / 63280 ----> average loss: 0.39669
+04/28/2022 02:41:25 - INFO - utils.trainer -   From rank1 Step: 23200 / 63280 ----> average loss: 0.39637
+04/28/2022 02:42:16 - INFO - utils.trainer -   From rank1 Step: 23400 / 63280 ----> average loss: 0.39644
+04/28/2022 02:42:16 - INFO - utils.trainer -   From rank0 Step: 23400 / 63280 ----> average loss: 0.39644
+04/28/2022 02:43:07 - INFO - utils.trainer -   From rank0 Step: 23600 / 63280 ----> average loss: 0.39640
+04/28/2022 02:43:07 - INFO - utils.trainer -   From rank1 Step: 23600 / 63280 ----> average loss: 0.39644
+04/28/2022 02:43:59 - INFO - utils.trainer -   From rank0 Step: 23800 / 63280 ----> average loss: 0.39649
+04/28/2022 02:43:59 - INFO - utils.trainer -   From rank1 Step: 23800 / 63280 ----> average loss: 0.39639
+04/28/2022 02:44:50 - INFO - utils.trainer -   From rank1 Step: 24000 / 63280 ----> average loss: 0.39632
+04/28/2022 02:44:50 - INFO - utils.trainer -   From rank0 Step: 24000 / 63280 ----> average loss: 0.39628
+04/28/2022 02:45:41 - INFO - utils.trainer -   From rank0 Step: 24200 / 63280 ----> average loss: 0.39665
+04/28/2022 02:45:41 - INFO - utils.trainer -   From rank1 Step: 24200 / 63280 ----> average loss: 0.39649
+04/28/2022 02:46:31 - INFO - utils.trainer -   From rank0 Step: 24400 / 63280 ----> average loss: 0.39613
+04/28/2022 02:46:31 - INFO - utils.trainer -   From rank1 Step: 24400 / 63280 ----> average loss: 0.39637
+04/28/2022 02:47:22 - INFO - utils.trainer -   From rank1 Step: 24600 / 63280 ----> average loss: 0.39664
+04/28/2022 02:47:22 - INFO - utils.trainer -   From rank0 Step: 24600 / 63280 ----> average loss: 0.39624
+04/28/2022 02:48:12 - INFO - utils.trainer -   From rank0 Step: 24800 / 63280 ----> average loss: 0.39629
+04/28/2022 02:48:12 - INFO - utils.trainer -   From rank1 Step: 24800 / 63280 ----> average loss: 0.39646
+04/28/2022 02:49:03 - INFO - utils.trainer -   From rank0 Step: 25000 / 63280 ----> average loss: 0.39615
+04/28/2022 02:49:03 - INFO - utils.trainer -   From rank1 Step: 25000 / 63280 ----> average loss: 0.39621
+04/28/2022 02:49:53 - INFO - utils.trainer -   From rank0 Step: 25200 / 63280 ----> average loss: 0.39655
+04/28/2022 02:49:53 - INFO - utils.trainer -   From rank1 Step: 25200 / 63280 ----> average loss: 0.39648
+04/28/2022 02:50:21 - INFO - utils.trainer -   Saving model & optimizer & scheduler checkpoint to ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-25312
+04/28/2022 02:50:44 - INFO - utils.trainer -   From rank0 Step: 25400 / 63280 ----> average loss: 0.39607
+04/28/2022 02:50:44 - INFO - utils.trainer -   From rank1 Step: 25400 / 63280 ----> average loss: 0.39632
+04/28/2022 02:51:35 - INFO - utils.trainer -   From rank0 Step: 25600 / 63280 ----> average loss: 0.39595
+04/28/2022 02:51:35 - INFO - utils.trainer -   From rank1 Step: 25600 / 63280 ----> average loss: 0.39583
+04/28/2022 02:52:26 - INFO - utils.trainer -   From rank0 Step: 25800 / 63280 ----> average loss: 0.39604
+04/28/2022 02:52:26 - INFO - utils.trainer -   From rank1 Step: 25800 / 63280 ----> average loss: 0.39586
+04/28/2022 02:53:17 - INFO - utils.trainer -   From rank1 Step: 26000 / 63280 ----> average loss: 0.39606
+04/28/2022 02:53:17 - INFO - utils.trainer -   From rank0 Step: 26000 / 63280 ----> average loss: 0.39595
+04/28/2022 02:54:07 - INFO - utils.trainer -   From rank0 Step: 26200 / 63280 ----> average loss: 0.39600
+04/28/2022 02:54:07 - INFO - utils.trainer -   From rank1 Step: 26200 / 63280 ----> average loss: 0.39592
+04/28/2022 02:54:58 - INFO - utils.trainer -   From rank1 Step: 26400 / 63280 ----> average loss: 0.39586
+04/28/2022 02:54:58 - INFO - utils.trainer -   From rank0 Step: 26400 / 63280 ----> average loss: 0.39604
+04/28/2022 02:55:48 - INFO - utils.trainer -   From rank1 Step: 26600 / 63280 ----> average loss: 0.39576
+04/28/2022 02:55:48 - INFO - utils.trainer -   From rank0 Step: 26600 / 63280 ----> average loss: 0.39594
+04/28/2022 02:56:39 - INFO - utils.trainer -   From rank1 Step: 26800 / 63280 ----> average loss: 0.39573
+04/28/2022 02:56:39 - INFO - utils.trainer -   From rank0 Step: 26800 / 63280 ----> average loss: 0.39635
+04/28/2022 02:57:30 - INFO - utils.trainer -   From rank1 Step: 27000 / 63280 ----> average loss: 0.39603
+04/28/2022 02:57:30 - INFO - utils.trainer -   From rank0 Step: 27000 / 63280 ----> average loss: 0.39613
+04/28/2022 02:58:20 - INFO - utils.trainer -   From rank0 Step: 27200 / 63280 ----> average loss: 0.39621
+04/28/2022 02:58:20 - INFO - utils.trainer -   From rank1 Step: 27200 / 63280 ----> average loss: 0.39612
+04/28/2022 02:59:11 - INFO - utils.trainer -   From rank0 Step: 27400 / 63280 ----> average loss: 0.39619
+04/28/2022 02:59:11 - INFO - utils.trainer -   From rank1 Step: 27400 / 63280 ----> average loss: 0.39608
+04/28/2022 03:00:02 - INFO - utils.trainer -   From rank1 Step: 27600 / 63280 ----> average loss: 0.39634
+04/28/2022 03:00:02 - INFO - utils.trainer -   From rank0 Step: 27600 / 63280 ----> average loss: 0.39596
+04/28/2022 03:00:52 - INFO - utils.trainer -   From rank0 Step: 27800 / 63280 ----> average loss: 0.39620
+04/28/2022 03:00:52 - INFO - utils.trainer -   From rank1 Step: 27800 / 63280 ----> average loss: 0.39626
+04/28/2022 03:01:43 - INFO - utils.trainer -   From rank0 Step: 28000 / 63280 ----> average loss: 0.39612
+04/28/2022 03:01:43 - INFO - utils.trainer -   From rank1 Step: 28000 / 63280 ----> average loss: 0.39591
+04/28/2022 03:02:34 - INFO - utils.trainer -   From rank1 Step: 28200 / 63280 ----> average loss: 0.39590
+04/28/2022 03:02:34 - INFO - utils.trainer -   From rank0 Step: 28200 / 63280 ----> average loss: 0.39600
+04/28/2022 03:03:25 - INFO - utils.trainer -   From rank0 Step: 28400 / 63280 ----> average loss: 0.39632
+04/28/2022 03:03:25 - INFO - utils.trainer -   From rank1 Step: 28400 / 63280 ----> average loss: 0.39596
+04/28/2022 03:04:16 - INFO - utils.trainer -   From rank1 Step: 28600 / 63280 ----> average loss: 0.39619
+04/28/2022 03:04:16 - INFO - utils.trainer -   From rank0 Step: 28600 / 63280 ----> average loss: 0.39596
+04/28/2022 03:05:08 - INFO - utils.trainer -   From rank0 Step: 28800 / 63280 ----> average loss: 0.39627
+04/28/2022 03:05:08 - INFO - utils.trainer -   From rank1 Step: 28800 / 63280 ----> average loss: 0.39608
+04/28/2022 03:05:58 - INFO - utils.trainer -   From rank0 Step: 29000 / 63280 ----> average loss: 0.39633
+04/28/2022 03:05:58 - INFO - utils.trainer -   From rank1 Step: 29000 / 63280 ----> average loss: 0.39613
+04/28/2022 03:06:49 - INFO - utils.trainer -   From rank0 Step: 29200 / 63280 ----> average loss: 0.39613
+04/28/2022 03:06:49 - INFO - utils.trainer -   From rank1 Step: 29200 / 63280 ----> average loss: 0.39633
+04/28/2022 03:07:40 - INFO - utils.trainer -   From rank0 Step: 29400 / 63280 ----> average loss: 0.39637
+04/28/2022 03:07:40 - INFO - utils.trainer -   From rank1 Step: 29400 / 63280 ----> average loss: 0.39607
+04/28/2022 03:08:31 - INFO - utils.trainer -   From rank0 Step: 29600 / 63280 ----> average loss: 0.39629
+04/28/2022 03:08:31 - INFO - utils.trainer -   From rank1 Step: 29600 / 63280 ----> average loss: 0.39620
+04/28/2022 03:09:22 - INFO - utils.trainer -   From rank0 Step: 29800 / 63280 ----> average loss: 0.39619
+04/28/2022 03:09:22 - INFO - utils.trainer -   From rank1 Step: 29800 / 63280 ----> average loss: 0.39635
+04/28/2022 03:10:12 - INFO - utils.trainer -   From rank0 Step: 30000 / 63280 ----> average loss: 0.39585
+04/28/2022 03:10:12 - INFO - utils.trainer -   From rank1 Step: 30000 / 63280 ----> average loss: 0.39591
+04/28/2022 03:11:02 - INFO - utils.trainer -   From rank1 Step: 30200 / 63280 ----> average loss: 0.39606
+04/28/2022 03:11:02 - INFO - utils.trainer -   From rank0 Step: 30200 / 63280 ----> average loss: 0.39608
+04/28/2022 03:11:52 - INFO - utils.trainer -   From rank0 Step: 30400 / 63280 ----> average loss: 0.39631
+04/28/2022 03:11:52 - INFO - utils.trainer -   From rank1 Step: 30400 / 63280 ----> average loss: 0.39594
+04/28/2022 03:12:43 - INFO - utils.trainer -   From rank0 Step: 30600 / 63280 ----> average loss: 0.39616
+04/28/2022 03:12:43 - INFO - utils.trainer -   From rank1 Step: 30600 / 63280 ----> average loss: 0.39613
+04/28/2022 03:13:33 - INFO - utils.trainer -   From rank0 Step: 30800 / 63280 ----> average loss: 0.39597
+04/28/2022 03:13:33 - INFO - utils.trainer -   From rank1 Step: 30800 / 63280 ----> average loss: 0.39607
+04/28/2022 03:14:23 - INFO - utils.trainer -   From rank0 Step: 31000 / 63280 ----> average loss: 0.39590
+04/28/2022 03:14:23 - INFO - utils.trainer -   From rank1 Step: 31000 / 63280 ----> average loss: 0.39594
+04/28/2022 03:15:14 - INFO - utils.trainer -   From rank0 Step: 31200 / 63280 ----> average loss: 0.39613
+04/28/2022 03:15:14 - INFO - utils.trainer -   From rank1 Step: 31200 / 63280 ----> average loss: 0.39593
+04/28/2022 03:16:06 - INFO - utils.trainer -   From rank0 Step: 31400 / 63280 ----> average loss: 0.39583
+04/28/2022 03:16:06 - INFO - utils.trainer -   From rank1 Step: 31400 / 63280 ----> average loss: 0.39611
+04/28/2022 03:16:57 - INFO - utils.trainer -   From rank0 Step: 31600 / 63280 ----> average loss: 0.39577
+04/28/2022 03:16:57 - INFO - utils.trainer -   From rank1 Step: 31600 / 63280 ----> average loss: 0.39660
+04/28/2022 03:17:07 - INFO - utils.trainer -   Saving model & optimizer & scheduler checkpoint to ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-31640
+04/28/2022 03:17:47 - INFO - utils.trainer -   From rank0 Step: 31800 / 63280 ----> average loss: 0.39583
+04/28/2022 03:17:47 - INFO - utils.trainer -   From rank1 Step: 31800 / 63280 ----> average loss: 0.39611
+04/28/2022 03:18:38 - INFO - utils.trainer -   From rank0 Step: 32000 / 63280 ----> average loss: 0.39639
+04/28/2022 03:18:38 - INFO - utils.trainer -   From rank1 Step: 32000 / 63280 ----> average loss: 0.39602
+04/28/2022 03:19:28 - INFO - utils.trainer -   From rank0 Step: 32200 / 63280 ----> average loss: 0.39585
+04/28/2022 03:19:28 - INFO - utils.trainer -   From rank1 Step: 32200 / 63280 ----> average loss: 0.39572
+04/28/2022 03:20:18 - INFO - utils.trainer -   From rank0 Step: 32400 / 63280 ----> average loss: 0.39597
+04/28/2022 03:20:18 - INFO - utils.trainer -   From rank1 Step: 32400 / 63280 ----> average loss: 0.39598
+04/28/2022 03:21:08 - INFO - utils.trainer -   From rank1 Step: 32600 / 63280 ----> average loss: 0.39571
+04/28/2022 03:21:08 - INFO - utils.trainer -   From rank0 Step: 32600 / 63280 ----> average loss: 0.39593
+04/28/2022 03:21:58 - INFO - utils.trainer -   From rank0 Step: 32800 / 63280 ----> average loss: 0.39564
+04/28/2022 03:21:58 - INFO - utils.trainer -   From rank1 Step: 32800 / 63280 ----> average loss: 0.39579
+04/28/2022 03:22:49 - INFO - utils.trainer -   From rank0 Step: 33000 / 63280 ----> average loss: 0.39580
+04/28/2022 03:22:49 - INFO - utils.trainer -   From rank1 Step: 33000 / 63280 ----> average loss: 0.39560
+04/28/2022 03:23:39 - INFO - utils.trainer -   From rank0 Step: 33200 / 63280 ----> average loss: 0.39601
+04/28/2022 03:23:39 - INFO - utils.trainer -   From rank1 Step: 33200 / 63280 ----> average loss: 0.39574
+04/28/2022 03:24:29 - INFO - utils.trainer -   From rank1 Step: 33400 / 63280 ----> average loss: 0.39580
+04/28/2022 03:24:29 - INFO - utils.trainer -   From rank0 Step: 33400 / 63280 ----> average loss: 0.39595
+04/28/2022 03:25:20 - INFO - utils.trainer -   From rank1 Step: 33600 / 63280 ----> average loss: 0.39607
+04/28/2022 03:25:20 - INFO - utils.trainer -   From rank0 Step: 33600 / 63280 ----> average loss: 0.39569
+04/28/2022 03:26:11 - INFO - utils.trainer -   From rank0 Step: 33800 / 63280 ----> average loss: 0.39587
+04/28/2022 03:26:11 - INFO - utils.trainer -   From rank1 Step: 33800 / 63280 ----> average loss: 0.39576
+04/28/2022 03:27:01 - INFO - utils.trainer -   From rank0 Step: 34000 / 63280 ----> average loss: 0.39607
+04/28/2022 03:27:01 - INFO - utils.trainer -   From rank1 Step: 34000 / 63280 ----> average loss: 0.39590
+04/28/2022 03:27:50 - INFO - utils.trainer -   From rank1 Step: 34200 / 63280 ----> average loss: 0.39560
+04/28/2022 03:27:50 - INFO - utils.trainer -   From rank0 Step: 34200 / 63280 ----> average loss: 0.39577
+04/28/2022 03:28:40 - INFO - utils.trainer -   From rank0 Step: 34400 / 63280 ----> average loss: 0.39611
+04/28/2022 03:28:40 - INFO - utils.trainer -   From rank1 Step: 34400 / 63280 ----> average loss: 0.39556
+04/28/2022 03:29:32 - INFO - utils.trainer -   From rank0 Step: 34600 / 63280 ----> average loss: 0.39611
+04/28/2022 03:29:32 - INFO - utils.trainer -   From rank1 Step: 34600 / 63280 ----> average loss: 0.39589
+04/28/2022 03:30:22 - INFO - utils.trainer -   From rank0 Step: 34800 / 63280 ----> average loss: 0.39573
+04/28/2022 03:30:22 - INFO - utils.trainer -   From rank1 Step: 34800 / 63280 ----> average loss: 0.39581
+04/28/2022 03:31:13 - INFO - utils.trainer -   From rank0 Step: 35000 / 63280 ----> average loss: 0.39604
+04/28/2022 03:31:13 - INFO - utils.trainer -   From rank1 Step: 35000 / 63280 ----> average loss: 0.39566
+04/28/2022 03:32:04 - INFO - utils.trainer -   From rank0 Step: 35200 / 63280 ----> average loss: 0.39566
+04/28/2022 03:32:04 - INFO - utils.trainer -   From rank1 Step: 35200 / 63280 ----> average loss: 0.39618
+04/28/2022 03:32:54 - INFO - utils.trainer -   From rank0 Step: 35400 / 63280 ----> average loss: 0.39583
+04/28/2022 03:32:54 - INFO - utils.trainer -   From rank1 Step: 35400 / 63280 ----> average loss: 0.39584
+04/28/2022 03:33:45 - INFO - utils.trainer -   From rank1 Step: 35600 / 63280 ----> average loss: 0.39589
+04/28/2022 03:33:45 - INFO - utils.trainer -   From rank0 Step: 35600 / 63280 ----> average loss: 0.39589
+04/28/2022 03:34:35 - INFO - utils.trainer -   From rank0 Step: 35800 / 63280 ----> average loss: 0.39586
+04/28/2022 03:34:35 - INFO - utils.trainer -   From rank1 Step: 35800 / 63280 ----> average loss: 0.39576
+04/28/2022 03:35:26 - INFO - utils.trainer -   From rank0 Step: 36000 / 63280 ----> average loss: 0.39560
+04/28/2022 03:35:26 - INFO - utils.trainer -   From rank1 Step: 36000 / 63280 ----> average loss: 0.39592
+04/28/2022 03:36:16 - INFO - utils.trainer -   From rank1 Step: 36200 / 63280 ----> average loss: 0.39576
+04/28/2022 03:36:16 - INFO - utils.trainer -   From rank0 Step: 36200 / 63280 ----> average loss: 0.39589
+04/28/2022 03:37:07 - INFO - utils.trainer -   From rank1 Step: 36400 / 63280 ----> average loss: 0.39573
+04/28/2022 03:37:07 - INFO - utils.trainer -   From rank0 Step: 36400 / 63280 ----> average loss: 0.39591
+04/28/2022 03:37:57 - INFO - utils.trainer -   From rank1 Step: 36600 / 63280 ----> average loss: 0.39561
+04/28/2022 03:37:57 - INFO - utils.trainer -   From rank0 Step: 36600 / 63280 ----> average loss: 0.39585
+04/28/2022 03:38:48 - INFO - utils.trainer -   From rank1 Step: 36800 / 63280 ----> average loss: 0.39593
+04/28/2022 03:38:48 - INFO - utils.trainer -   From rank0 Step: 36800 / 63280 ----> average loss: 0.39592
+04/28/2022 03:39:38 - INFO - utils.trainer -   From rank1 Step: 37000 / 63280 ----> average loss: 0.39616
+04/28/2022 03:39:38 - INFO - utils.trainer -   From rank0 Step: 37000 / 63280 ----> average loss: 0.39622
+04/28/2022 03:40:29 - INFO - utils.trainer -   From rank0 Step: 37200 / 63280 ----> average loss: 0.39580
+04/28/2022 03:40:29 - INFO - utils.trainer -   From rank1 Step: 37200 / 63280 ----> average loss: 0.39570
+04/28/2022 03:41:20 - INFO - utils.trainer -   From rank1 Step: 37400 / 63280 ----> average loss: 0.39581
+04/28/2022 03:41:20 - INFO - utils.trainer -   From rank0 Step: 37400 / 63280 ----> average loss: 0.39595
+04/28/2022 03:42:10 - INFO - utils.trainer -   From rank1 Step: 37600 / 63280 ----> average loss: 0.39561
+04/28/2022 03:42:10 - INFO - utils.trainer -   From rank0 Step: 37600 / 63280 ----> average loss: 0.39574
+04/28/2022 03:43:00 - INFO - utils.trainer -   From rank0 Step: 37800 / 63280 ----> average loss: 0.39594
+04/28/2022 03:43:00 - INFO - utils.trainer -   From rank1 Step: 37800 / 63280 ----> average loss: 0.39561
+04/28/2022 03:43:42 - INFO - utils.trainer -   Saving model & optimizer & scheduler checkpoint to ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-37968
+04/28/2022 03:43:50 - INFO - utils.trainer -   From rank1 Step: 38000 / 63280 ----> average loss: 0.39588
+04/28/2022 03:43:50 - INFO - utils.trainer -   From rank0 Step: 38000 / 63280 ----> average loss: 0.39586
+04/28/2022 03:44:41 - INFO - utils.trainer -   From rank1 Step: 38200 / 63280 ----> average loss: 0.39568
+04/28/2022 03:44:41 - INFO - utils.trainer -   From rank0 Step: 38200 / 63280 ----> average loss: 0.39555
+04/28/2022 03:45:32 - INFO - utils.trainer -   From rank0 Step: 38400 / 63280 ----> average loss: 0.39560
+04/28/2022 03:45:32 - INFO - utils.trainer -   From rank1 Step: 38400 / 63280 ----> average loss: 0.39562
+04/28/2022 03:46:22 - INFO - utils.trainer -   From rank1 Step: 38600 / 63280 ----> average loss: 0.39574
+04/28/2022 03:46:22 - INFO - utils.trainer -   From rank0 Step: 38600 / 63280 ----> average loss: 0.39546
+04/28/2022 03:47:12 - INFO - utils.trainer -   From rank1 Step: 38800 / 63280 ----> average loss: 0.39569
+04/28/2022 03:47:12 - INFO - utils.trainer -   From rank0 Step: 38800 / 63280 ----> average loss: 0.39563
+04/28/2022 03:48:02 - INFO - utils.trainer -   From rank1 Step: 39000 / 63280 ----> average loss: 0.39570
+04/28/2022 03:48:02 - INFO - utils.trainer -   From rank0 Step: 39000 / 63280 ----> average loss: 0.39565
+04/28/2022 03:48:53 - INFO - utils.trainer -   From rank1 Step: 39200 / 63280 ----> average loss: 0.39578
+04/28/2022 03:48:53 - INFO - utils.trainer -   From rank0 Step: 39200 / 63280 ----> average loss: 0.39555
+04/28/2022 03:49:43 - INFO - utils.trainer -   From rank1 Step: 39400 / 63280 ----> average loss: 0.39560
+04/28/2022 03:49:43 - INFO - utils.trainer -   From rank0 Step: 39400 / 63280 ----> average loss: 0.39578
+04/28/2022 03:50:34 - INFO - utils.trainer -   From rank0 Step: 39600 / 63280 ----> average loss: 0.39569
+04/28/2022 03:50:34 - INFO - utils.trainer -   From rank1 Step: 39600 / 63280 ----> average loss: 0.39593
+04/28/2022 03:51:24 - INFO - utils.trainer -   From rank1 Step: 39800 / 63280 ----> average loss: 0.39567
+04/28/2022 03:51:24 - INFO - utils.trainer -   From rank0 Step: 39800 / 63280 ----> average loss: 0.39593
+04/28/2022 03:52:15 - INFO - utils.trainer -   From rank1 Step: 40000 / 63280 ----> average loss: 0.39552
+04/28/2022 03:52:15 - INFO - utils.trainer -   From rank0 Step: 40000 / 63280 ----> average loss: 0.39559
+04/28/2022 03:53:05 - INFO - utils.trainer -   From rank1 Step: 40200 / 63280 ----> average loss: 0.39556
+04/28/2022 03:53:05 - INFO - utils.trainer -   From rank0 Step: 40200 / 63280 ----> average loss: 0.39575
+04/28/2022 03:53:55 - INFO - utils.trainer -   From rank1 Step: 40400 / 63280 ----> average loss: 0.39560
+04/28/2022 03:53:55 - INFO - utils.trainer -   From rank0 Step: 40400 / 63280 ----> average loss: 0.39539
+04/28/2022 03:54:46 - INFO - utils.trainer -   From rank0 Step: 40600 / 63280 ----> average loss: 0.39575
+04/28/2022 03:54:46 - INFO - utils.trainer -   From rank1 Step: 40600 / 63280 ----> average loss: 0.39568
+04/28/2022 03:55:36 - INFO - utils.trainer -   From rank0 Step: 40800 / 63280 ----> average loss: 0.39563
+04/28/2022 03:55:36 - INFO - utils.trainer -   From rank1 Step: 40800 / 63280 ----> average loss: 0.39587
+04/28/2022 03:56:26 - INFO - utils.trainer -   From rank0 Step: 41000 / 63280 ----> average loss: 0.39573
+04/28/2022 03:56:26 - INFO - utils.trainer -   From rank1 Step: 41000 / 63280 ----> average loss: 0.39546
+04/28/2022 03:57:17 - INFO - utils.trainer -   From rank1 Step: 41200 / 63280 ----> average loss: 0.39573
+04/28/2022 03:57:17 - INFO - utils.trainer -   From rank0 Step: 41200 / 63280 ----> average loss: 0.39559
+04/28/2022 03:58:07 - INFO - utils.trainer -   From rank1 Step: 41400 / 63280 ----> average loss: 0.39572
+04/28/2022 03:58:07 - INFO - utils.trainer -   From rank0 Step: 41400 / 63280 ----> average loss: 0.39564
+04/28/2022 03:58:57 - INFO - utils.trainer -   From rank0 Step: 41600 / 63280 ----> average loss: 0.39573
+04/28/2022 03:58:57 - INFO - utils.trainer -   From rank1 Step: 41600 / 63280 ----> average loss: 0.39566
+04/28/2022 03:59:48 - INFO - utils.trainer -   From rank1 Step: 41800 / 63280 ----> average loss: 0.39567
+04/28/2022 03:59:48 - INFO - utils.trainer -   From rank0 Step: 41800 / 63280 ----> average loss: 0.39546
+04/28/2022 04:00:39 - INFO - utils.trainer -   From rank0 Step: 42000 / 63280 ----> average loss: 0.39557
+04/28/2022 04:00:39 - INFO - utils.trainer -   From rank1 Step: 42000 / 63280 ----> average loss: 0.39599
+04/28/2022 04:01:29 - INFO - utils.trainer -   From rank1 Step: 42200 / 63280 ----> average loss: 0.39581
+04/28/2022 04:01:30 - INFO - utils.trainer -   From rank0 Step: 42200 / 63280 ----> average loss: 0.39563
+04/28/2022 04:02:20 - INFO - utils.trainer -   From rank1 Step: 42400 / 63280 ----> average loss: 0.39536
+04/28/2022 04:02:20 - INFO - utils.trainer -   From rank0 Step: 42400 / 63280 ----> average loss: 0.39559
+04/28/2022 04:03:10 - INFO - utils.trainer -   From rank1 Step: 42600 / 63280 ----> average loss: 0.39576
+04/28/2022 04:03:10 - INFO - utils.trainer -   From rank0 Step: 42600 / 63280 ----> average loss: 0.39574
+04/28/2022 04:04:01 - INFO - utils.trainer -   From rank1 Step: 42800 / 63280 ----> average loss: 0.39576
+04/28/2022 04:04:01 - INFO - utils.trainer -   From rank0 Step: 42800 / 63280 ----> average loss: 0.39563
+04/28/2022 04:04:51 - INFO - utils.trainer -   From rank1 Step: 43000 / 63280 ----> average loss: 0.39566
+04/28/2022 04:04:51 - INFO - utils.trainer -   From rank0 Step: 43000 / 63280 ----> average loss: 0.39569
+04/28/2022 04:05:41 - INFO - utils.trainer -   From rank0 Step: 43200 / 63280 ----> average loss: 0.39569
+04/28/2022 04:05:41 - INFO - utils.trainer -   From rank1 Step: 43200 / 63280 ----> average loss: 0.39553
+04/28/2022 04:06:33 - INFO - utils.trainer -   From rank0 Step: 43400 / 63280 ----> average loss: 0.39547
+04/28/2022 04:06:33 - INFO - utils.trainer -   From rank1 Step: 43400 / 63280 ----> average loss: 0.39546
+04/28/2022 04:07:23 - INFO - utils.trainer -   From rank1 Step: 43600 / 63280 ----> average loss: 0.39547
+04/28/2022 04:07:23 - INFO - utils.trainer -   From rank0 Step: 43600 / 63280 ----> average loss: 0.39586
+04/28/2022 04:08:13 - INFO - utils.trainer -   From rank1 Step: 43800 / 63280 ----> average loss: 0.39567
+04/28/2022 04:08:13 - INFO - utils.trainer -   From rank0 Step: 43800 / 63280 ----> average loss: 0.39565
+04/28/2022 04:09:03 - INFO - utils.trainer -   From rank1 Step: 44000 / 63280 ----> average loss: 0.39563
+04/28/2022 04:09:03 - INFO - utils.trainer -   From rank0 Step: 44000 / 63280 ----> average loss: 0.39576
+04/28/2022 04:09:54 - INFO - utils.trainer -   From rank1 Step: 44200 / 63280 ----> average loss: 0.39574
+04/28/2022 04:09:54 - INFO - utils.trainer -   From rank0 Step: 44200 / 63280 ----> average loss: 0.39574
+04/28/2022 04:10:18 - INFO - utils.trainer -   Saving model & optimizer & scheduler checkpoint to ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-44296
+04/28/2022 04:10:44 - INFO - utils.trainer -   From rank1 Step: 44400 / 63280 ----> average loss: 0.39574
+04/28/2022 04:10:44 - INFO - utils.trainer -   From rank0 Step: 44400 / 63280 ----> average loss: 0.39572
+04/28/2022 04:11:35 - INFO - utils.trainer -   From rank1 Step: 44600 / 63280 ----> average loss: 0.39552
+04/28/2022 04:11:35 - INFO - utils.trainer -   From rank0 Step: 44600 / 63280 ----> average loss: 0.39556
+04/28/2022 04:12:25 - INFO - utils.trainer -   From rank1 Step: 44800 / 63280 ----> average loss: 0.39551
+04/28/2022 04:12:25 - INFO - utils.trainer -   From rank0 Step: 44800 / 63280 ----> average loss: 0.39555
+04/28/2022 04:13:15 - INFO - utils.trainer -   From rank0 Step: 45000 / 63280 ----> average loss: 0.39546
+04/28/2022 04:13:15 - INFO - utils.trainer -   From rank1 Step: 45000 / 63280 ----> average loss: 0.39556
+04/28/2022 04:14:07 - INFO - utils.trainer -   From rank0 Step: 45200 / 63280 ----> average loss: 0.39543
+04/28/2022 04:14:07 - INFO - utils.trainer -   From rank1 Step: 45200 / 63280 ----> average loss: 0.39564
+04/28/2022 04:14:58 - INFO - utils.trainer -   From rank1 Step: 45400 / 63280 ----> average loss: 0.39553
+04/28/2022 04:14:58 - INFO - utils.trainer -   From rank0 Step: 45400 / 63280 ----> average loss: 0.39552
+04/28/2022 04:15:48 - INFO - utils.trainer -   From rank1 Step: 45600 / 63280 ----> average loss: 0.39552
+04/28/2022 04:15:48 - INFO - utils.trainer -   From rank0 Step: 45600 / 63280 ----> average loss: 0.39558
+04/28/2022 04:16:38 - INFO - utils.trainer -   From rank1 Step: 45800 / 63280 ----> average loss: 0.39541
+04/28/2022 04:16:38 - INFO - utils.trainer -   From rank0 Step: 45800 / 63280 ----> average loss: 0.39546
+04/28/2022 04:17:29 - INFO - utils.trainer -   From rank1 Step: 46000 / 63280 ----> average loss: 0.39561
+04/28/2022 04:17:29 - INFO - utils.trainer -   From rank0 Step: 46000 / 63280 ----> average loss: 0.39555
+04/28/2022 04:18:19 - INFO - utils.trainer -   From rank0 Step: 46200 / 63280 ----> average loss: 0.39547
+04/28/2022 04:18:19 - INFO - utils.trainer -   From rank1 Step: 46200 / 63280 ----> average loss: 0.39569
+04/28/2022 04:19:10 - INFO - utils.trainer -   From rank1 Step: 46400 / 63280 ----> average loss: 0.39561
+04/28/2022 04:19:10 - INFO - utils.trainer -   From rank0 Step: 46400 / 63280 ----> average loss: 0.39532
+04/28/2022 04:20:00 - INFO - utils.trainer -   From rank1 Step: 46600 / 63280 ----> average loss: 0.39536
+04/28/2022 04:20:00 - INFO - utils.trainer -   From rank0 Step: 46600 / 63280 ----> average loss: 0.39554
+04/28/2022 04:20:51 - INFO - utils.trainer -   From rank1 Step: 46800 / 63280 ----> average loss: 0.39547
+04/28/2022 04:20:51 - INFO - utils.trainer -   From rank0 Step: 46800 / 63280 ----> average loss: 0.39544
+04/28/2022 04:21:41 - INFO - utils.trainer -   From rank1 Step: 47000 / 63280 ----> average loss: 0.39558
+04/28/2022 04:21:41 - INFO - utils.trainer -   From rank0 Step: 47000 / 63280 ----> average loss: 0.39569
+04/28/2022 04:22:31 - INFO - utils.trainer -   From rank1 Step: 47200 / 63280 ----> average loss: 0.39538
+04/28/2022 04:22:31 - INFO - utils.trainer -   From rank0 Step: 47200 / 63280 ----> average loss: 0.39540
+04/28/2022 04:23:22 - INFO - utils.trainer -   From rank1 Step: 47400 / 63280 ----> average loss: 0.39564
+04/28/2022 04:23:22 - INFO - utils.trainer -   From rank0 Step: 47400 / 63280 ----> average loss: 0.39553
+04/28/2022 04:24:12 - INFO - utils.trainer -   From rank1 Step: 47600 / 63280 ----> average loss: 0.39539
+04/28/2022 04:24:12 - INFO - utils.trainer -   From rank0 Step: 47600 / 63280 ----> average loss: 0.39569
+04/28/2022 04:25:02 - INFO - utils.trainer -   From rank1 Step: 47800 / 63280 ----> average loss: 0.39549
+04/28/2022 04:25:02 - INFO - utils.trainer -   From rank0 Step: 47800 / 63280 ----> average loss: 0.39545
+04/28/2022 04:25:53 - INFO - utils.trainer -   From rank1 Step: 48000 / 63280 ----> average loss: 0.39553
+04/28/2022 04:25:53 - INFO - utils.trainer -   From rank0 Step: 48000 / 63280 ----> average loss: 0.39547
+04/28/2022 04:26:43 - INFO - utils.trainer -   From rank1 Step: 48200 / 63280 ----> average loss: 0.39578
+04/28/2022 04:26:43 - INFO - utils.trainer -   From rank0 Step: 48200 / 63280 ----> average loss: 0.39567
+04/28/2022 04:27:33 - INFO - utils.trainer -   From rank1 Step: 48400 / 63280 ----> average loss: 0.39592
+04/28/2022 04:27:33 - INFO - utils.trainer -   From rank0 Step: 48400 / 63280 ----> average loss: 0.39556
+04/28/2022 04:28:24 - INFO - utils.trainer -   From rank1 Step: 48600 / 63280 ----> average loss: 0.39542
+04/28/2022 04:28:24 - INFO - utils.trainer -   From rank0 Step: 48600 / 63280 ----> average loss: 0.39557
+04/28/2022 04:29:15 - INFO - utils.trainer -   From rank1 Step: 48800 / 63280 ----> average loss: 0.39546
+04/28/2022 04:29:15 - INFO - utils.trainer -   From rank0 Step: 48800 / 63280 ----> average loss: 0.39563
+04/28/2022 04:30:05 - INFO - utils.trainer -   From rank1 Step: 49000 / 63280 ----> average loss: 0.39537
+04/28/2022 04:30:05 - INFO - utils.trainer -   From rank0 Step: 49000 / 63280 ----> average loss: 0.39547
+04/28/2022 04:30:56 - INFO - utils.trainer -   From rank0 Step: 49200 / 63280 ----> average loss: 0.39569
+04/28/2022 04:30:56 - INFO - utils.trainer -   From rank1 Step: 49200 / 63280 ----> average loss: 0.39560
+04/28/2022 04:31:46 - INFO - utils.trainer -   From rank1 Step: 49400 / 63280 ----> average loss: 0.39563
+04/28/2022 04:31:46 - INFO - utils.trainer -   From rank0 Step: 49400 / 63280 ----> average loss: 0.39554
+04/28/2022 04:32:37 - INFO - utils.trainer -   From rank1 Step: 49600 / 63280 ----> average loss: 0.39556
+04/28/2022 04:32:37 - INFO - utils.trainer -   From rank0 Step: 49600 / 63280 ----> average loss: 0.39552
+04/28/2022 04:33:27 - INFO - utils.trainer -   From rank1 Step: 49800 / 63280 ----> average loss: 0.39541
+04/28/2022 04:33:27 - INFO - utils.trainer -   From rank0 Step: 49800 / 63280 ----> average loss: 0.39551
+04/28/2022 04:34:17 - INFO - utils.trainer -   From rank0 Step: 50000 / 63280 ----> average loss: 0.39547
+04/28/2022 04:34:17 - INFO - utils.trainer -   From rank1 Step: 50000 / 63280 ----> average loss: 0.39572
+04/28/2022 04:35:08 - INFO - utils.trainer -   From rank1 Step: 50200 / 63280 ----> average loss: 0.39542
+04/28/2022 04:35:08 - INFO - utils.trainer -   From rank0 Step: 50200 / 63280 ----> average loss: 0.39549
+04/28/2022 04:35:58 - INFO - utils.trainer -   From rank1 Step: 50400 / 63280 ----> average loss: 0.39546
+04/28/2022 04:35:58 - INFO - utils.trainer -   From rank0 Step: 50400 / 63280 ----> average loss: 0.39539
+04/28/2022 04:36:49 - INFO - utils.trainer -   From rank1 Step: 50600 / 63280 ----> average loss: 0.39540
+04/28/2022 04:36:49 - INFO - utils.trainer -   From rank0 Step: 50600 / 63280 ----> average loss: 0.39556
+04/28/2022 04:36:55 - INFO - utils.trainer -   Saving model & optimizer & scheduler checkpoint to ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-50624
+04/28/2022 04:37:39 - INFO - utils.trainer -   From rank1 Step: 50800 / 63280 ----> average loss: 0.39532
+04/28/2022 04:37:39 - INFO - utils.trainer -   From rank0 Step: 50800 / 63280 ----> average loss: 0.39545
+04/28/2022 04:38:30 - INFO - utils.trainer -   From rank1 Step: 51000 / 63280 ----> average loss: 0.39537
+04/28/2022 04:38:30 - INFO - utils.trainer -   From rank0 Step: 51000 / 63280 ----> average loss: 0.39536
+04/28/2022 04:39:20 - INFO - utils.trainer -   From rank1 Step: 51200 / 63280 ----> average loss: 0.39529
+04/28/2022 04:39:20 - INFO - utils.trainer -   From rank0 Step: 51200 / 63280 ----> average loss: 0.39539
+04/28/2022 04:40:11 - INFO - utils.trainer -   From rank1 Step: 51400 / 63280 ----> average loss: 0.39557
+04/28/2022 04:40:11 - INFO - utils.trainer -   From rank0 Step: 51400 / 63280 ----> average loss: 0.39529
+04/28/2022 04:41:01 - INFO - utils.trainer -   From rank1 Step: 51600 / 63280 ----> average loss: 0.39535
+04/28/2022 04:41:01 - INFO - utils.trainer -   From rank0 Step: 51600 / 63280 ----> average loss: 0.39554
+04/28/2022 04:41:52 - INFO - utils.trainer -   From rank1 Step: 51800 / 63280 ----> average loss: 0.39533
+04/28/2022 04:41:52 - INFO - utils.trainer -   From rank0 Step: 51800 / 63280 ----> average loss: 0.39524
+04/28/2022 04:42:43 - INFO - utils.trainer -   From rank1 Step: 52000 / 63280 ----> average loss: 0.39540
+04/28/2022 04:42:43 - INFO - utils.trainer -   From rank0 Step: 52000 / 63280 ----> average loss: 0.39529
+04/28/2022 04:43:33 - INFO - utils.trainer -   From rank1 Step: 52200 / 63280 ----> average loss: 0.39537
+04/28/2022 04:43:33 - INFO - utils.trainer -   From rank0 Step: 52200 / 63280 ----> average loss: 0.39563
+04/28/2022 04:44:23 - INFO - utils.trainer -   From rank1 Step: 52400 / 63280 ----> average loss: 0.39548
+04/28/2022 04:44:23 - INFO - utils.trainer -   From rank0 Step: 52400 / 63280 ----> average loss: 0.39561
+04/28/2022 04:45:13 - INFO - utils.trainer -   From rank1 Step: 52600 / 63280 ----> average loss: 0.39548
+04/28/2022 04:45:13 - INFO - utils.trainer -   From rank0 Step: 52600 / 63280 ----> average loss: 0.39554
+04/28/2022 04:46:04 - INFO - utils.trainer -   From rank1 Step: 52800 / 63280 ----> average loss: 0.39554
+04/28/2022 04:46:04 - INFO - utils.trainer -   From rank0 Step: 52800 / 63280 ----> average loss: 0.39538
+04/28/2022 04:46:55 - INFO - utils.trainer -   From rank1 Step: 53000 / 63280 ----> average loss: 0.39548
+04/28/2022 04:46:55 - INFO - utils.trainer -   From rank0 Step: 53000 / 63280 ----> average loss: 0.39537
+04/28/2022 04:47:46 - INFO - utils.trainer -   From rank1 Step: 53200 / 63280 ----> average loss: 0.39532
+04/28/2022 04:47:46 - INFO - utils.trainer -   From rank0 Step: 53200 / 63280 ----> average loss: 0.39546
+04/28/2022 04:48:37 - INFO - utils.trainer -   From rank0 Step: 53400 / 63280 ----> average loss: 0.39532
+04/28/2022 04:48:37 - INFO - utils.trainer -   From rank1 Step: 53400 / 63280 ----> average loss: 0.39532
+04/28/2022 04:49:27 - INFO - utils.trainer -   From rank0 Step: 53600 / 63280 ----> average loss: 0.39545
+04/28/2022 04:49:27 - INFO - utils.trainer -   From rank1 Step: 53600 / 63280 ----> average loss: 0.39539
+04/28/2022 04:50:18 - INFO - utils.trainer -   From rank0 Step: 53800 / 63280 ----> average loss: 0.39546
+04/28/2022 04:50:18 - INFO - utils.trainer -   From rank1 Step: 53800 / 63280 ----> average loss: 0.39549
+04/28/2022 04:51:08 - INFO - utils.trainer -   From rank0 Step: 54000 / 63280 ----> average loss: 0.39539
+04/28/2022 04:51:08 - INFO - utils.trainer -   From rank1 Step: 54000 / 63280 ----> average loss: 0.39547
+04/28/2022 04:51:59 - INFO - utils.trainer -   From rank1 Step: 54200 / 63280 ----> average loss: 0.39536
+04/28/2022 04:51:59 - INFO - utils.trainer -   From rank0 Step: 54200 / 63280 ----> average loss: 0.39540
+04/28/2022 04:52:49 - INFO - utils.trainer -   From rank0 Step: 54400 / 63280 ----> average loss: 0.39539
+04/28/2022 04:52:49 - INFO - utils.trainer -   From rank1 Step: 54400 / 63280 ----> average loss: 0.39536
+04/28/2022 04:53:39 - INFO - utils.trainer -   From rank0 Step: 54600 / 63280 ----> average loss: 0.39545
+04/28/2022 04:53:39 - INFO - utils.trainer -   From rank1 Step: 54600 / 63280 ----> average loss: 0.39525
+04/28/2022 04:54:29 - INFO - utils.trainer -   From rank0 Step: 54800 / 63280 ----> average loss: 0.39556
+04/28/2022 04:54:29 - INFO - utils.trainer -   From rank1 Step: 54800 / 63280 ----> average loss: 0.39550
+04/28/2022 04:55:19 - INFO - utils.trainer -   From rank0 Step: 55000 / 63280 ----> average loss: 0.39548
+04/28/2022 04:55:19 - INFO - utils.trainer -   From rank1 Step: 55000 / 63280 ----> average loss: 0.39537
+04/28/2022 04:56:10 - INFO - utils.trainer -   From rank1 Step: 55200 / 63280 ----> average loss: 0.39524
+04/28/2022 04:56:10 - INFO - utils.trainer -   From rank0 Step: 55200 / 63280 ----> average loss: 0.39544
+04/28/2022 04:57:00 - INFO - utils.trainer -   From rank1 Step: 55400 / 63280 ----> average loss: 0.39537
+04/28/2022 04:57:00 - INFO - utils.trainer -   From rank0 Step: 55400 / 63280 ----> average loss: 0.39532
+04/28/2022 04:57:51 - INFO - utils.trainer -   From rank0 Step: 55600 / 63280 ----> average loss: 0.39538
+04/28/2022 04:57:51 - INFO - utils.trainer -   From rank1 Step: 55600 / 63280 ----> average loss: 0.39531
+04/28/2022 04:58:41 - INFO - utils.trainer -   From rank1 Step: 55800 / 63280 ----> average loss: 0.39539
+04/28/2022 04:58:41 - INFO - utils.trainer -   From rank0 Step: 55800 / 63280 ----> average loss: 0.39531
+04/28/2022 04:59:31 - INFO - utils.trainer -   From rank1 Step: 56000 / 63280 ----> average loss: 0.39542
+04/28/2022 04:59:31 - INFO - utils.trainer -   From rank0 Step: 56000 / 63280 ----> average loss: 0.39544
+04/28/2022 05:00:21 - INFO - utils.trainer -   From rank1 Step: 56200 / 63280 ----> average loss: 0.39541
+04/28/2022 05:00:21 - INFO - utils.trainer -   From rank0 Step: 56200 / 63280 ----> average loss: 0.39546
+04/28/2022 05:01:11 - INFO - utils.trainer -   From rank1 Step: 56400 / 63280 ----> average loss: 0.39542
+04/28/2022 05:01:11 - INFO - utils.trainer -   From rank0 Step: 56400 / 63280 ----> average loss: 0.39551
+04/28/2022 05:02:01 - INFO - utils.trainer -   From rank1 Step: 56600 / 63280 ----> average loss: 0.39535
+04/28/2022 05:02:01 - INFO - utils.trainer -   From rank0 Step: 56600 / 63280 ----> average loss: 0.39535
+04/28/2022 05:02:51 - INFO - utils.trainer -   From rank1 Step: 56800 / 63280 ----> average loss: 0.39539
+04/28/2022 05:02:51 - INFO - utils.trainer -   From rank0 Step: 56800 / 63280 ----> average loss: 0.39532
+04/28/2022 05:03:29 - INFO - utils.trainer -   Saving model & optimizer & scheduler checkpoint to ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-56952
+04/28/2022 05:03:42 - INFO - utils.trainer -   From rank0 Step: 57000 / 63280 ----> average loss: 0.39529
+04/28/2022 05:03:42 - INFO - utils.trainer -   From rank1 Step: 57000 / 63280 ----> average loss: 0.39544
+04/28/2022 05:04:32 - INFO - utils.trainer -   From rank0 Step: 57200 / 63280 ----> average loss: 0.39540
+04/28/2022 05:04:32 - INFO - utils.trainer -   From rank1 Step: 57200 / 63280 ----> average loss: 0.39533
+04/28/2022 05:05:22 - INFO - utils.trainer -   From rank1 Step: 57400 / 63280 ----> average loss: 0.39520
+04/28/2022 05:05:22 - INFO - utils.trainer -   From rank0 Step: 57400 / 63280 ----> average loss: 0.39540
+04/28/2022 05:06:12 - INFO - utils.trainer -   From rank1 Step: 57600 / 63280 ----> average loss: 0.39530
+04/28/2022 05:06:12 - INFO - utils.trainer -   From rank0 Step: 57600 / 63280 ----> average loss: 0.39532
+04/28/2022 05:07:02 - INFO - utils.trainer -   From rank0 Step: 57800 / 63280 ----> average loss: 0.39530
+04/28/2022 05:07:02 - INFO - utils.trainer -   From rank1 Step: 57800 / 63280 ----> average loss: 0.39526
+04/28/2022 05:07:53 - INFO - utils.trainer -   From rank0 Step: 58000 / 63280 ----> average loss: 0.39529
+04/28/2022 05:07:53 - INFO - utils.trainer -   From rank1 Step: 58000 / 63280 ----> average loss: 0.39521
+04/28/2022 05:08:43 - INFO - utils.trainer -   From rank0 Step: 58200 / 63280 ----> average loss: 0.39536
+04/28/2022 05:08:43 - INFO - utils.trainer -   From rank1 Step: 58200 / 63280 ----> average loss: 0.39522
+04/28/2022 05:09:33 - INFO - utils.trainer -   From rank0 Step: 58400 / 63280 ----> average loss: 0.39535
+04/28/2022 05:09:33 - INFO - utils.trainer -   From rank1 Step: 58400 / 63280 ----> average loss: 0.39538
+04/28/2022 05:10:23 - INFO - utils.trainer -   From rank1 Step: 58600 / 63280 ----> average loss: 0.39523
+04/28/2022 05:10:23 - INFO - utils.trainer -   From rank0 Step: 58600 / 63280 ----> average loss: 0.39534
+04/28/2022 05:11:13 - INFO - utils.trainer -   From rank1 Step: 58800 / 63280 ----> average loss: 0.39521
+04/28/2022 05:11:13 - INFO - utils.trainer -   From rank0 Step: 58800 / 63280 ----> average loss: 0.39522
+04/28/2022 05:12:03 - INFO - utils.trainer -   From rank0 Step: 59000 / 63280 ----> average loss: 0.39523
+04/28/2022 05:12:03 - INFO - utils.trainer -   From rank1 Step: 59000 / 63280 ----> average loss: 0.39522
+04/28/2022 05:12:54 - INFO - utils.trainer -   From rank0 Step: 59200 / 63280 ----> average loss: 0.39520
+04/28/2022 05:12:54 - INFO - utils.trainer -   From rank1 Step: 59200 / 63280 ----> average loss: 0.39532
+04/28/2022 05:13:44 - INFO - utils.trainer -   From rank1 Step: 59400 / 63280 ----> average loss: 0.39527
+04/28/2022 05:13:44 - INFO - utils.trainer -   From rank0 Step: 59400 / 63280 ----> average loss: 0.39524
+04/28/2022 05:14:35 - INFO - utils.trainer -   From rank1 Step: 59600 / 63280 ----> average loss: 0.39527
+04/28/2022 05:14:35 - INFO - utils.trainer -   From rank0 Step: 59600 / 63280 ----> average loss: 0.39523
+04/28/2022 05:15:25 - INFO - utils.trainer -   From rank1 Step: 59800 / 63280 ----> average loss: 0.39528
+04/28/2022 05:15:25 - INFO - utils.trainer -   From rank0 Step: 59800 / 63280 ----> average loss: 0.39542
+04/28/2022 05:16:15 - INFO - utils.trainer -   From rank1 Step: 60000 / 63280 ----> average loss: 0.39542
+04/28/2022 05:16:16 - INFO - utils.trainer -   From rank0 Step: 60000 / 63280 ----> average loss: 0.39533
+04/28/2022 05:17:05 - INFO - utils.trainer -   From rank1 Step: 60200 / 63280 ----> average loss: 0.39523
+04/28/2022 05:17:05 - INFO - utils.trainer -   From rank0 Step: 60200 / 63280 ----> average loss: 0.39550
+04/28/2022 05:17:55 - INFO - utils.trainer -   From rank1 Step: 60400 / 63280 ----> average loss: 0.39530
+04/28/2022 05:17:55 - INFO - utils.trainer -   From rank0 Step: 60400 / 63280 ----> average loss: 0.39538
+04/28/2022 05:18:45 - INFO - utils.trainer -   From rank1 Step: 60600 / 63280 ----> average loss: 0.39531
+04/28/2022 05:18:45 - INFO - utils.trainer -   From rank0 Step: 60600 / 63280 ----> average loss: 0.39530
+04/28/2022 05:19:35 - INFO - utils.trainer -   From rank1 Step: 60800 / 63280 ----> average loss: 0.39538
+04/28/2022 05:19:35 - INFO - utils.trainer -   From rank0 Step: 60800 / 63280 ----> average loss: 0.39541
+04/28/2022 05:20:25 - INFO - utils.trainer -   From rank1 Step: 61000 / 63280 ----> average loss: 0.39557
+04/28/2022 05:20:25 - INFO - utils.trainer -   From rank0 Step: 61000 / 63280 ----> average loss: 0.39517
+04/28/2022 05:21:16 - INFO - utils.trainer -   From rank1 Step: 61200 / 63280 ----> average loss: 0.39538
+04/28/2022 05:21:16 - INFO - utils.trainer -   From rank0 Step: 61200 / 63280 ----> average loss: 0.39531
+04/28/2022 05:22:06 - INFO - utils.trainer -   From rank1 Step: 61400 / 63280 ----> average loss: 0.39537
+04/28/2022 05:22:06 - INFO - utils.trainer -   From rank0 Step: 61400 / 63280 ----> average loss: 0.39537
+04/28/2022 05:22:57 - INFO - utils.trainer -   From rank1 Step: 61600 / 63280 ----> average loss: 0.39534
+04/28/2022 05:22:57 - INFO - utils.trainer -   From rank0 Step: 61600 / 63280 ----> average loss: 0.39524
+04/28/2022 05:23:47 - INFO - utils.trainer -   From rank1 Step: 61800 / 63280 ----> average loss: 0.39538
+04/28/2022 05:23:47 - INFO - utils.trainer -   From rank0 Step: 61800 / 63280 ----> average loss: 0.39529
+04/28/2022 05:24:37 - INFO - utils.trainer -   From rank1 Step: 62000 / 63280 ----> average loss: 0.39526
+04/28/2022 05:24:37 - INFO - utils.trainer -   From rank0 Step: 62000 / 63280 ----> average loss: 0.39536
+04/28/2022 05:25:28 - INFO - utils.trainer -   From rank0 Step: 62200 / 63280 ----> average loss: 0.39536
+04/28/2022 05:25:28 - INFO - utils.trainer -   From rank1 Step: 62200 / 63280 ----> average loss: 0.39525
+04/28/2022 05:26:19 - INFO - utils.trainer -   From rank0 Step: 62400 / 63280 ----> average loss: 0.39527
+04/28/2022 05:26:19 - INFO - utils.trainer -   From rank1 Step: 62400 / 63280 ----> average loss: 0.39519
+04/28/2022 05:27:09 - INFO - utils.trainer -   From rank0 Step: 62600 / 63280 ----> average loss: 0.39528
+04/28/2022 05:27:09 - INFO - utils.trainer -   From rank1 Step: 62600 / 63280 ----> average loss: 0.39517
+04/28/2022 05:28:00 - INFO - utils.trainer -   From rank0 Step: 62800 / 63280 ----> average loss: 0.39529
+04/28/2022 05:28:00 - INFO - utils.trainer -   From rank1 Step: 62800 / 63280 ----> average loss: 0.39524
+04/28/2022 05:28:50 - INFO - utils.trainer -   From rank1 Step: 63000 / 63280 ----> average loss: 0.39538
+04/28/2022 05:28:50 - INFO - utils.trainer -   From rank0 Step: 63000 / 63280 ----> average loss: 0.39518
+04/28/2022 05:29:41 - INFO - utils.trainer -   From rank0 Step: 63200 / 63280 ----> average loss: 0.39538
+04/28/2022 05:29:41 - INFO - utils.trainer -   From rank1 Step: 63200 / 63280 ----> average loss: 0.39531
+04/28/2022 05:30:01 - INFO - utils.trainer -   Saving model & optimizer & scheduler checkpoint to ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-63280
+04/28/2022 05:30:01 - INFO - utils.trainer -   Train done
+04/28/2022 05:30:01 - INFO - utils.functions_utils -   Load model from ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-25312/model.pt
+04/28/2022 05:30:02 - INFO - utils.functions_utils -   Load model from ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-31640/model.pt
+04/28/2022 05:30:03 - INFO - utils.functions_utils -   Load model from ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-37968/model.pt
+04/28/2022 05:30:04 - INFO - utils.functions_utils -   Load model from ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-44296/model.pt
+04/28/2022 05:30:04 - INFO - utils.functions_utils -   Load model from ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-50624/model.pt
+04/28/2022 05:30:05 - INFO - utils.functions_utils -   Load model from ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-56952/model.pt
+04/28/2022 05:30:06 - INFO - utils.functions_utils -   Load model from ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-63280/model.pt
+04/28/2022 05:30:07 - INFO - utils.functions_utils -   Load model from ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-100000/model.pt
+04/28/2022 05:30:08 - INFO - utils.functions_utils -   Save swa model in: ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-100000
+04/28/2022 05:30:10 - INFO - utils.trainer -   Train done
+04/28/2022 05:30:11 - INFO - root -   ----------本次容器运行时长：4:27:53-----------
+04/28/2022 05:30:11 - INFO - transformers.configuration_utils -   loading configuration file ../FinBERT/config.json
+04/28/2022 05:30:11 - INFO - transformers.configuration_utils -   Model config BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "output_hidden_states": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+04/28/2022 05:30:11 - INFO - transformers.modeling_utils -   loading weights file ../FinBERT/pytorch_model.bin
+04/28/2022 05:30:12 - INFO - preprocess.processor -   Convert 2933 examples to features
+04/28/2022 05:30:27 - INFO - preprocess.processor -   Build 29330 features
+04/28/2022 05:36:27 - INFO - __main__ -   In step 6328:
+ [MIRCO] precision: 0.8815, recall: 0.8768, f1: 0.8753
+04/28/2022 05:42:25 - INFO - __main__ -   In step 12656:
+ [MIRCO] precision: 0.8897, recall: 0.9362, f1: 0.9109
+04/28/2022 05:48:23 - INFO - __main__ -   In step 18984:
+ [MIRCO] precision: 0.9211, recall: 0.9115, f1: 0.9158
+04/28/2022 05:54:21 - INFO - __main__ -   In step 25312:
+ [MIRCO] precision: 0.9199, recall: 0.9232, f1: 0.9207
+04/28/2022 06:00:19 - INFO - __main__ -   In step 31640:
+ [MIRCO] precision: 0.9249, recall: 0.9241, f1: 0.9242
+04/28/2022 06:06:17 - INFO - __main__ -   In step 37968:
+ [MIRCO] precision: 0.9285, recall: 0.9265, f1: 0.9273
+04/28/2022 06:12:15 - INFO - __main__ -   In step 44296:
+ [MIRCO] precision: 0.9206, recall: 0.9300, f1: 0.9248
+04/28/2022 06:18:13 - INFO - __main__ -   In step 50624:
+ [MIRCO] precision: 0.9199, recall: 0.9387, f1: 0.9287
+04/28/2022 06:24:11 - INFO - __main__ -   In step 56952:
+ [MIRCO] precision: 0.9211, recall: 0.9351, f1: 0.9276
+04/28/2022 06:30:09 - INFO - __main__ -   In step 63280:
+ [MIRCO] precision: 0.9225, recall: 0.9374, f1: 0.9294
+04/28/2022 06:36:07 - INFO - __main__ -   In step 100000:
+ [MIRCO] precision: 0.9240, recall: 0.9391, f1: 0.9312
+04/28/2022 06:36:07 - INFO - __main__ -   Max f1 is: 0.9312397704887878, in step 100000
+04/28/2022 06:36:07 - INFO - __main__ -   ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-6328已删除
+04/28/2022 06:36:07 - INFO - __main__ -   ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-12656已删除
+04/28/2022 06:36:07 - INFO - __main__ -   ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-18984已删除
+04/28/2022 06:36:07 - INFO - __main__ -   ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-25312已删除
+04/28/2022 06:36:07 - INFO - __main__ -   ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-31640已删除
+04/28/2022 06:36:07 - INFO - __main__ -   ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-37968已删除
+04/28/2022 06:36:07 - INFO - __main__ -   ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-44296已删除
+04/28/2022 06:36:07 - INFO - __main__ -   ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-50624已删除
+04/28/2022 06:36:07 - INFO - __main__ -   ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-56952已删除
+04/28/2022 06:36:07 - INFO - __main__ -   ./out/finbert_wd_fp16_ls_ce_mrc/checkpoint-63280已删除
+04/28/2022 06:36:08 - INFO - root -   ----------本次容器运行时长：5:33:50-----------
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************

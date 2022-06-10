@@ -1,0 +1,32 @@
+04/28/2022 06:38:09 - INFO - __main__ -   ------Start Prediction------
+04/28/2022 06:38:09 - INFO - transformers.configuration_utils -   loading configuration file ../FinBERT/config.json
+04/28/2022 06:38:09 - INFO - transformers.configuration_utils -   Model config BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "output_hidden_states": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+04/28/2022 06:38:09 - INFO - transformers.modeling_utils -   loading weights file ../FinBERT/pytorch_model.bin
+04/28/2022 06:38:11 - INFO - preprocess.processor -   Convert 2758 examples to features
+04/28/2022 06:38:26 - INFO - preprocess.processor -   Build 27580 features
+04/28/2022 06:44:22 - INFO - __main__ -   The test F1 score:0.9281351353043146 
+
+04/28/2022 06:44:22 - INFO - __main__ -   Metric info:[MIRCO] precision: 0.9245, recall: 0.9328, f1: 0.9281
