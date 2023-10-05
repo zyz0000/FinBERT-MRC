@@ -6,7 +6,7 @@ click==8.1.2
 filelock==3.6.0
 idna==3.3
 jmespath==1.0.0
-joblib==1.1.0
+joblib==1.1.1
 numpy==1.22.3
 packaging==21.3
 Pillow==9.1.0
